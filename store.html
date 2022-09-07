@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEVEN GALS</title>
+
+    <!-- BOOSTTRAP CSS FILE CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- BOOSTTRAP ICON CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- CUSTOM CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- MAIN NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid px-md-5">
+            <a href="#" class="navbar-brand d-flex align-items-center gap-2">
+                <img src="img/Seven Gals Icon (Black).png" alt="Logo">
+                <span class="Navlogo">
+                    SEVEN GALS
+                </span>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavbarIcon">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="NavbarIcon">
+                <ul class="navbar-nav ms-auto align-items-md-center">
+                    <li class="nav-item"> <a href="#" class="nav-link fw-500">About Us</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle fw-500" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="store.html">Shop Now</a></li>
+                                <li><a class="dropdown-item" href="#">Another</a></li>
+                                <li><a class="dropdown-item" href="#">Something</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person nav-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">
+                            <i class="bi bi-cart3 nav-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BRADCUMB SECTION -->
+    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+        <ol class="breadcrumb px-3 py-2">
+            <li class="breadcrumb-item"><a href="index.html" style="color: var(--color-grey-dark);">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Drasses</li>
+        </ol>
+    </nav>
+
+
+    <main class="container-xxl mt-3 mb-4">
+        <div class="row">
+            <div class="col-md-3 border-end">
+
+                <div class="accordion" id="my-accordion">
+                    <!-- Price Range START -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#price-range" aria-expanded="false" aria-controls="price-range">
+                                Price Range
+                            </button>
+                        </h2>
+                        <div id="price-range" class="accordion-collapse collapse" aria-labelledby="price-range">
+                            <div class="accordion-body">
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">Under 500 (4)</span>
+                                    <input type="checkbox" name="under500">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text"> 501 - 1000 (34)</span>
+                                    <input type="checkbox" name="501-1000">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">1001 - 5000(47)</span>
+                                    <input type="checkbox" name="1001-5000">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">5001 - 10000 (409)</span>
+                                    <input type="checkbox" name="5001-10000">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">10001 - 20000 (29)</span>
+                                    <input type="checkbox" name="10001-20000">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Price Range END -->
+
+                    <!-- Category START -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category" aria-expanded="false" aria-controls="category">
+                                Category
+                            </button>
+                        </h2>
+                        <div id="category" class="accordion-collapse collapse" aria-labelledby="category">
+                            <div class="accordion-body">
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">Category 1</span>
+                                    <input type="checkbox" name="category-1">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text"> Category 2</span>
+                                    <input type="checkbox" name="category-2">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">Category 3</span>
+                                    <input type="checkbox" name="category-3">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">Category 4</span>
+                                    <input type="checkbox" name="category-4">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category END -->
+
+                    <!-- Color START -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#color" aria-expanded="false" aria-controls="color">
+                                color
+                            </button>
+                        </h2>
+                        <div id="color" class="accordion-collapse collapse" aria-labelledby="color">
+                            <div class="accordion-body">
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">Color 1 (21)</span>
+                                    <input type="checkbox" name="Color-1">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text"> Color 2 (21)</span>
+                                    <input type="checkbox" name="Color-2">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">Color 3 (21)</span>
+                                    <input type="checkbox" name="Color-3">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">Color 4 (21)</span>
+                                    <input type="checkbox" name="Color-4">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Color END -->
+
+                    <!-- Size START -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#size" aria-expanded="false" aria-controls="size">
+                                size
+                            </button>
+                        </h2>
+                        <div id="size" class="accordion-collapse collapse" aria-labelledby="size">
+                            <div class="accordion-body">
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text">S (231)</span>
+                                    <input type="checkbox" name="Color-1">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text"> M (421)</span>
+                                    <input type="checkbox" name="m">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text"> L (621)</span>
+                                    <input type="checkbox" name="l">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text"> XL (571)</span>
+                                    <input type="checkbox" name="xl">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="custom-checkbox my-3">
+                                    <span class="cehckbox-text"> XXL (71)</span>
+                                    <input type="checkbox" name="xxl">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Size END -->
+                </div>
+            </div>
+
+
+            <div class="col-md-9">
+                <div class="store-head d-flex justify-content-between align-items-center border-bottom">
+                    <div>
+                        <h5 class="text-uppercase m-0">Dresses</h5>
+                        <div class="d-flex align-items-center flex-wrap">
+                            <p class="color-grey fw-500 m-0 me-3">Filter by:</p>
+                            <div class="filter-chip">
+                                1001 - 2000
+                                <i class="bi bi-x-lg filter-chip-close"></i>
+                            </div>
+                            <div class="filter-chip">
+                                5001 - 10000
+                                <i class="bi bi-x-lg filter-chip-close"></i>
+                            </div>
+                            <div class="filter-chip">
+                                Gery
+                                <i class="bi bi-x-lg filter-chip-close"></i>
+                            </div>
+                            <p class="m-0 text-uppercase fw-500 text-decoration-underline m-2 clear-all-filter-btn" style="cursor: pointer;">Clear all</p>
+                        </div>
+                    </div>
+                    <div>
+                        <select class="form-select sort-by-select" aria-label="Sort-by">
+                            <option selected>Sort By</option>
+                            <option value="high-to-low">Price High to Low</option>
+                            <option value="low-to-high">Price Low to High</option>
+                            <option value="discount">Discount</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products px-3 my-4">
+
+                    <div class="row">
+                        <div class=" col-lg-4 col-sm-6">
+                            <div class="product-item card border-0 rounded-0">
+                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <div class="card-body py-2 text-center">
+                                    <p class="card-title color-grey m-0">Product item title one</p>
+                                    <div class="d-flex justify-content-around align-items-end">
+                                        <p class="product-price m-0">Rs 2156</p>
+                                        <p class="old-pirce m-0">Rs 4302</p>
+                                        <p class="discount m-0">(40% OFF)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-4 col-sm-6">
+                            <div class="product-item card border-0 rounded-0">
+                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <div class="card-body py-2 text-center">
+                                    <p class="card-title color-grey m-0">Product item title one</p>
+                                    <div class="d-flex justify-content-around align-items-end">
+                                        <p class="product-price m-0">Rs 2156</p>
+                                        <p class="old-pirce m-0">Rs 4302</p>
+                                        <p class="discount m-0">(40% OFF)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-4 col-sm-6">
+                            <div class="product-item card border-0 rounded-0">
+                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <div class="card-body py-2 text-center">
+                                    <p class="card-title color-grey m-0">Product item title one</p>
+                                    <div class="d-flex justify-content-around align-items-end">
+                                        <p class="product-price m-0">Rs 2156</p>
+                                        <p class="old-pirce m-0">Rs 4302</p>
+                                        <p class="discount m-0">(40% OFF)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-4 col-sm-6">
+                            <div class="product-item card border-0 rounded-0">
+                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <div class="card-body py-2 text-center">
+                                    <p class="card-title color-grey m-0">Product item title one</p>
+                                    <div class="d-flex justify-content-around align-items-end">
+                                        <p class="product-price m-0">Rs 2156</p>
+                                        <p class="old-pirce m-0">Rs 4302</p>
+                                        <p class="discount m-0">(40% OFF)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-4 col-sm-6">
+                            <div class="product-item card border-0 rounded-0">
+                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <div class="card-body py-2 text-center">
+                                    <p class="card-title color-grey m-0">Product item title one</p>
+                                    <div class="d-flex justify-content-around align-items-end">
+                                        <p class="product-price m-0">Rs 2156</p>
+                                        <p class="old-pirce m-0">Rs 4302</p>
+                                        <p class="discount m-0">(40% OFF)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-4 col-sm-6">
+                            <div class="product-item card border-0 rounded-0">
+                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <div class="card-body py-2 text-center">
+                                    <p class="card-title color-grey m-0">Product item title one</p>
+                                    <div class="d-flex justify-content-around align-items-end">
+                                        <p class="product-price m-0">Rs 2156</p>
+                                        <p class="old-pirce m-0">Rs 4302</p>
+                                        <p class="discount m-0">(40% OFF)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- BENEFIT SECTION -->
+    <div class="section2 container my-4">
+        <div class="row s2Row">
+            <div class="col-lg-4 col-md-6 col-sm-12 b">
+                <div class="s2Box py-3 px-2">
+                    <img class="s2logo" src="img/airplane.svg" alt="">
+                    <p class="ms-5">Free Shipping Worldwide</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 b">
+                <div class="s2Box py-3 px-2">
+                    <img class="s2logo" src="img/headphones.svg" alt="">
+                    <p class="ms-5">24x7 Customer Service</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 b">
+                <div class="s2Box py-3 px-2">
+                    <img class="s2logo" src="img/heart.svg" alt="">
+                    <p class="ms-5">Easy Return Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEWSLATTER SECTION START -->
+    <section class="newslatter-section">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h1>Sign up for free style tips</h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-lg" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEWSLATTER SECTION END -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-5 mb-4">
+                    <div class="footer-logo d-flex align-items-center gap-2">
+                        <img src="img/Seven Gals Icon (Black).png" alt="Logo">
+                        <h1 class="text-uppercase">Seven Gals</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex cum impedit sit itaque dolores suscipit dolore quibusdam commodi? Illum deleniti quisquam dicta? Vero dicta maxime quam .</p>
+
+                    <ul class="social-icons">
+                        <li>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7 m-auto">
+
+                    <div class="d-flex justify-content-around flex-wrap">
+                        <div class="footer-links">
+                            <h5>Opening Time</h5>
+                            <ul>
+                                <li><a href="#">Mon 8am</a></li>
+                                <li><a href="#">Sat 6am</a></li>
+                                <li><a href="#">Wed 10am</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h5>Information</h5>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">New collection</a></li>
+                                <li><a href="#">Term & Condition</a></li>
+                                <li><a href="#">Privecy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h5>Shop guide</h5>
+                            <ul>
+                                <li><a href="#">Card Tracing</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Size guide</a></li>
+                                <li><a href="#">Term & Condition</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright &copy; sevengals.com</p>
+        </div>
+    </footer>
+
+
+    <!-- CUSTOM JS FILE -->
+    <script src="main.js"></script>
+
+    <!-- BOOSTTRAP JS FILE CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>

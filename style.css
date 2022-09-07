@@ -3,6 +3,12 @@
 	padding: 0;
 }
 
+:root {
+	--color-primary: #a555dc;
+	--color-grey-dark: #6c757d;
+	--color-grey-light: #eee;
+}
+
 .navbar-brand img {
 	width: 80px;
 }
@@ -124,7 +130,7 @@
 
 .menSale .btn {
 	padding: 10px 20px;
-	background-color:#a555dc;
+	background-color: #a555dc;
 	font-size: 18px;
 }
 
@@ -148,7 +154,7 @@
 
 .womenSale .btn {
 	padding: 10px 20px;
-	background-color:#a555dc;
+	background-color: #a555dc;
 	font-size: 18px;
 	border: none;
 }
@@ -279,8 +285,195 @@ footer {
 	color: #fff;
 	margin: 0;
 }
+.breadcrumb {
+	background-color: #a655dc4b;
+}
+
+/* ================================================================
+					 STORE PAGE START HERE
+=================================================================== */
+/* Accordion  */
+#my-accordion .accordion-button {
+	box-shadow: none !important;
+	font-weight: 600;
+	font-size: 18px;
+}
+#my-accordion .accordion-item {
+	border: none;
+}
+#my-accordion .accordion-button {
+	text-transform: uppercase;
+}
+
+#my-accordion .accordion-button::after {
+	background-image: url(../img/plus-lg.svg);
+}
+
+#my-accordion .accordion-button:not(.collapsed)::after {
+	background-image: url(../img/dash-lg.svg);
+}
+
+#my-accordion .accordion-button:not(.collapsed) {
+	color: #000;
+	background-color: #fff;
+}
+/* Accordion End */
+.custom-checkbox {
+	display: inline-block;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.custom-checkbox input {
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.custom-checkbox .checkmark {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+.custom-checkbox:hover input ~ .checkmark {
+	background-color: #e9e9e956;
+}
+.custom-checkbox input:checked ~ .checkmark {
+	background-color: var(--color-primary-dark);
+	border: none;
+}
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+.custom-checkbox .checkmark:after {
+	left: 8px;
+	top: 4px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/* CUSTOM CHECKBOX  */
+.custom-checkbox {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.custom-checkbox .cehckbox-text {
+	color: var(--color-grey-dark);
+	font-weight: 500;
+}
+.custom-checkbox input {
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.custom-checkbox .checkmark {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+.custom-checkbox:hover input ~ .checkmark {
+	background-color: #e9e9e956;
+}
+.custom-checkbox input:checked ~ .checkmark {
+	background-color: var(--color-primary);
+	border: none;
+}
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+.custom-checkbox .checkmark:after {
+	left: 8px;
+	top: 4px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/* CUSTOM CHECKBOX END */
+
+.filter-chip {
+	color: var(--color-primary);
+	border: 1px solid var(--color-primary);
+	padding: 0 8px;
+	border-radius: 20px;
+	margin: 5px;
+}
+.filter-chip-close {
+	color: var(--color-grey-dark);
+	cursor: pointer;
+}
+.sort-by-select {
+	box-shadow: none !important;
+	background-color: #fafafa;
+	border-radius: 2px;
+}
+.products {
+	display: flex;
+	flex-wrap: wrap;
+}
+.product-item {
+	margin: 10px;
+}
+.product-price {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+.old-pirce {
+	text-decoration: line-through;
+}
+.discount {
+	color: var(--color-primary);
+	font-size: 18px;
+	font-weight: 500;
+}
+
+/* ================================================================
+					 STORE PAGE END HERE
+=================================================================== */
 
 /* UTILITIES */
 .fw-500 {
 	font-weight: 500;
+}
+.color-grey {
+	color: var(--color-grey-dark);
 }
