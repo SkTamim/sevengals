@@ -71,17 +71,17 @@
 
     <main class="container-xxl mt-3 mb-4">
         <div class="row">
-            <div class="col-md-3 border-end">
+            <div class="col-md-3 border-end d-md-block d-none">
 
                 <div class="accordion" id="my-accordion">
                     <!-- Price Range START -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#price-range" aria-expanded="false" aria-controls="price-range">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#price-range" aria-expanded="true" aria-controls="price-range">
                                 Price Range
                             </button>
                         </h2>
-                        <div id="price-range" class="accordion-collapse collapse" aria-labelledby="price-range">
+                        <div id="price-range" class="accordion-collapse collapse show" aria-labelledby="price-range">
                             <div class="accordion-body">
 
                                 <label class="custom-checkbox my-3">
@@ -122,11 +122,11 @@
                     <!-- Category START -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category" aria-expanded="false" aria-controls="category">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category" aria-expanded="true" aria-controls="category">
                                 Category
                             </button>
                         </h2>
-                        <div id="category" class="accordion-collapse collapse" aria-labelledby="category">
+                        <div id="category" class="accordion-collapse collapse show" aria-labelledby="category">
                             <div class="accordion-body">
 
                                 <label class="custom-checkbox my-3">
@@ -161,11 +161,11 @@
                     <!-- Color START -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#color" aria-expanded="false" aria-controls="color">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#color" aria-expanded="true" aria-controls="color">
                                 color
                             </button>
                         </h2>
-                        <div id="color" class="accordion-collapse collapse" aria-labelledby="color">
+                        <div id="color" class="accordion-collapse collapse show" aria-labelledby="color">
                             <div class="accordion-body">
 
                                 <label class="custom-checkbox my-3">
@@ -200,11 +200,11 @@
                     <!-- Size START -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#size" aria-expanded="false" aria-controls="size">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#size" aria-expanded="true" aria-controls="size">
                                 size
                             </button>
                         </h2>
-                        <div id="size" class="accordion-collapse collapse" aria-labelledby="size">
+                        <div id="size" class="accordion-collapse collapse show" aria-labelledby="size">
                             <div class="accordion-body">
 
                                 <label class="custom-checkbox my-3">
@@ -247,7 +247,7 @@
 
             <div class="col-md-9">
                 <div class="store-head d-flex justify-content-between align-items-center border-bottom row">
-                    <div class="col-sm-8">
+                    <div class="col-md-8">
                         <h5 class="text-uppercase m-0">Dresses</h5>
                         <div class="d-flex align-items-center flex-wrap">
                             <p class="color-grey fw-500 m-0 me-3">Filter by:</p>
@@ -266,31 +266,41 @@
                             <p class="m-0 text-uppercase fw-500 text-decoration-underline m-2 clear-all-filter-btn" style="cursor: pointer;">Clear all</p>
                         </div>
                     </div>
-                    <div class="col-sm-4 my-3">
-                        <select class="form-select sort-by-select" aria-label="Sort-by">
-                            <option selected>Sort By</option>
-                            <option value="high-to-low">Price High to Low</option>
-                            <option value="low-to-high">Price Low to High</option>
-                            <option value="discount">Discount</option>
-                        </select>
+                    <div class="col-md-4 my-3">
+                        <div class="row">
+                            <div class="col d-md-none d-block">
+                                <button class="btn filter-btn" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas" aria-controls="filterOffcanvas">Filters</button>
+                            </div>
+                            <div class="col">
+                                <select class="form-select sort-by-select" aria-label="Sort-by">
+                                    <option selected>Relevence</option>
+                                    <option value="high-to-low">Price High to Low</option>
+                                    <option value="low-to-high">Price Low to High</option>
+                                    <option value="discount">Discount</option>
+                                </select>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
-                <div class="products px-3 my-4">
+                <div class="products my-4">
 
                     <div class="row">
                         <div class=" col-lg-4 col-sm-6">
                             <div class="product-item card border-0 rounded-0">
-                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <a href="product-details.html">
+                                    <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                </a>
                                 <div class="card-body py-2 text-center">
-                                    <a href="#" class="card-title product-title">Product item title one</a>
+                                    <a href="product-details.html" class="card-title product-title">Product item title one</a>
                                     <div class="d-flex justify-content-around align-items-end">
                                         <p class="product-price m-0">Rs 2156</p>
                                         <p class="old-pirce m-0">Rs 4302</p>
                                         <p class="discount m-0">(40% OFF)</p>
                                     </div>
                                 </div>
-                                <a href="#" class="product-view-btn">
+                                <a href="#" class="product-view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     Quick View
                                     <i class="bi bi-eye"></i>
                                 </a>
@@ -299,16 +309,18 @@
 
                         <div class=" col-lg-4 col-sm-6">
                             <div class="product-item card border-0 rounded-0">
-                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <a href="product-details.html">
+                                    <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                </a>
                                 <div class="card-body py-2 text-center">
-                                    <a href="#" class="card-title product-title">Product item title one</a>
+                                    <a href="product-details.html" class="card-title product-title">Product item title one</a>
                                     <div class="d-flex justify-content-around align-items-end">
                                         <p class="product-price m-0">Rs 2156</p>
                                         <p class="old-pirce m-0">Rs 4302</p>
                                         <p class="discount m-0">(40% OFF)</p>
                                     </div>
                                 </div>
-                                <a href="#" class="product-view-btn">
+                                <a href="#" class="product-view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     Quick View
                                     <i class="bi bi-eye"></i>
                                 </a>
@@ -317,16 +329,18 @@
 
                         <div class=" col-lg-4 col-sm-6">
                             <div class="product-item card border-0 rounded-0">
-                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <a href="product-details.html">
+                                    <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                </a>
                                 <div class="card-body py-2 text-center">
-                                    <a href="#" class="card-title product-title">Product item title one</a>
+                                    <a href="product-details.html" class="card-title product-title">Product item title one</a>
                                     <div class="d-flex justify-content-around align-items-end">
                                         <p class="product-price m-0">Rs 2156</p>
                                         <p class="old-pirce m-0">Rs 4302</p>
                                         <p class="discount m-0">(40% OFF)</p>
                                     </div>
                                 </div>
-                                <a href="#" class="product-view-btn">
+                                <a href="#" class="product-view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     Quick View
                                     <i class="bi bi-eye"></i>
                                 </a>
@@ -335,16 +349,18 @@
 
                         <div class=" col-lg-4 col-sm-6">
                             <div class="product-item card border-0 rounded-0">
-                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <a href="product-details.html">
+                                    <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                </a>
                                 <div class="card-body py-2 text-center">
-                                    <a href="#" class="card-title product-title">Product item title one</a>
+                                    <a href="product-details.html" class="card-title product-title">Product item title one</a>
                                     <div class="d-flex justify-content-around align-items-end">
                                         <p class="product-price m-0">Rs 2156</p>
                                         <p class="old-pirce m-0">Rs 4302</p>
                                         <p class="discount m-0">(40% OFF)</p>
                                     </div>
                                 </div>
-                                <a href="#" class="product-view-btn">
+                                <a href="#" class="product-view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     Quick View
                                     <i class="bi bi-eye"></i>
                                 </a>
@@ -353,16 +369,18 @@
 
                         <div class=" col-lg-4 col-sm-6">
                             <div class="product-item card border-0 rounded-0">
-                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <a href="product-details.html">
+                                    <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                </a>
                                 <div class="card-body py-2 text-center">
-                                    <a href="#" class="card-title product-title">Product item title one</a>
+                                    <a href="product-details.html" class="card-title product-title">Product item title one</a>
                                     <div class="d-flex justify-content-around align-items-end">
                                         <p class="product-price m-0">Rs 2156</p>
                                         <p class="old-pirce m-0">Rs 4302</p>
                                         <p class="discount m-0">(40% OFF)</p>
                                     </div>
                                 </div>
-                                <a href="#" class="product-view-btn">
+                                <a href="#" class="product-view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     Quick View
                                     <i class="bi bi-eye"></i>
                                 </a>
@@ -371,68 +389,28 @@
 
                         <div class=" col-lg-4 col-sm-6">
                             <div class="product-item card border-0 rounded-0">
-                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                <a href="product-details.html">
+                                    <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
+                                </a>
                                 <div class="card-body py-2 text-center">
-                                    <a href="#" class="card-title product-title">Product item title one</a>
+                                    <a href="product-details.html" class="card-title product-title">Product item title one</a>
                                     <div class="d-flex justify-content-around align-items-end">
                                         <p class="product-price m-0">Rs 2156</p>
                                         <p class="old-pirce m-0">Rs 4302</p>
                                         <p class="discount m-0">(40% OFF)</p>
                                     </div>
                                 </div>
-                                <a href="#" class="product-view-btn">
+                                <a href="#" class="product-view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                     Quick View
                                     <i class="bi bi-eye"></i>
                                 </a>
                             </div>
                         </div>
-
-                        <div class=" col-lg-4 col-sm-6">
-                            <div class="product-item card border-0 rounded-0">
-                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
-                                <div class="card-body py-2 text-center">
-                                    <a href="#" class="card-title product-title">Product item title one</a>
-                                    <div class="d-flex justify-content-around align-items-end">
-                                        <p class="product-price m-0">Rs 2156</p>
-                                        <p class="old-pirce m-0">Rs 4302</p>
-                                        <p class="discount m-0">(40% OFF)</p>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-view-btn">
-                                    Quick View
-                                    <i class="bi bi-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class=" col-lg-4 col-sm-6">
-                            <div class="product-item card border-0 rounded-0">
-                                <img src="img/girl-dress.jpg" class="card-img-top rounded-0" alt="Product Image">
-                                <div class="card-body py-2 text-center">
-                                    <a href="#" class="card-title product-title">Product item title one</a>
-                                    <div class="d-flex justify-content-around align-items-end">
-                                        <p class="product-price m-0">Rs 2156</p>
-                                        <p class="old-pirce m-0">Rs 4302</p>
-                                        <p class="discount m-0">(40% OFF)</p>
-                                    </div>
-                                </div>
-                                <a href="#" class="product-view-btn">
-                                    Quick View
-                                    <i class="bi bi-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-
-
-
 
 
 
 
                     </div>
-
-
-
 
                 </div>
             </div>
@@ -549,6 +527,351 @@
             <p>copyright &copy; sevengals.com</p>
         </div>
     </footer>
+
+
+    <!-- FILTER OFFCANVAS START -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="filterOffcanvas" aria-labelledby="filterOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="filterOffcanvasLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="accordion" id="my-accordion">
+                <!-- Price Range START -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#price-range" aria-expanded="true" aria-controls="price-range">
+                            Price Range
+                        </button>
+                    </h2>
+                    <div id="price-range" class="accordion-collapse collapse show" aria-labelledby="price-range">
+                        <div class="accordion-body">
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">Under 500 (4)</span>
+                                <input type="checkbox" name="under500">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text"> 501 - 1000 (34)</span>
+                                <input type="checkbox" name="501-1000">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">1001 - 5000(47)</span>
+                                <input type="checkbox" name="1001-5000">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">5001 - 10000 (409)</span>
+                                <input type="checkbox" name="5001-10000">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">10001 - 20000 (29)</span>
+                                <input type="checkbox" name="10001-20000">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Price Range END -->
+
+                <!-- Category START -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category" aria-expanded="true" aria-controls="category">
+                            Category
+                        </button>
+                    </h2>
+                    <div id="category" class="accordion-collapse collapse show" aria-labelledby="category">
+                        <div class="accordion-body">
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">Category 1</span>
+                                <input type="checkbox" name="category-1">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text"> Category 2</span>
+                                <input type="checkbox" name="category-2">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">Category 3</span>
+                                <input type="checkbox" name="category-3">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">Category 4</span>
+                                <input type="checkbox" name="category-4">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Category END -->
+
+                <!-- Color START -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#color" aria-expanded="true" aria-controls="color">
+                            color
+                        </button>
+                    </h2>
+                    <div id="color" class="accordion-collapse collapse show" aria-labelledby="color">
+                        <div class="accordion-body">
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">Color 1 (21)</span>
+                                <input type="checkbox" name="Color-1">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text"> Color 2 (21)</span>
+                                <input type="checkbox" name="Color-2">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">Color 3 (21)</span>
+                                <input type="checkbox" name="Color-3">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">Color 4 (21)</span>
+                                <input type="checkbox" name="Color-4">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Color END -->
+
+                <!-- Size START -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#size" aria-expanded="true" aria-controls="size">
+                            size
+                        </button>
+                    </h2>
+                    <div id="size" class="accordion-collapse collapse show" aria-labelledby="size">
+                        <div class="accordion-body">
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text">S (231)</span>
+                                <input type="checkbox" name="Color-1">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text"> M (421)</span>
+                                <input type="checkbox" name="m">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text"> L (621)</span>
+                                <input type="checkbox" name="l">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text"> XL (571)</span>
+                                <input type="checkbox" name="xl">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="custom-checkbox my-3">
+                                <span class="cehckbox-text"> XXL (71)</span>
+                                <input type="checkbox" name="xxl">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Size END -->
+            </div>
+
+        </div>
+    </div>
+    <!-- FILTER OFFCANVAS END -->
+
+    <!-- QUICK VIEW MODAL START -->
+    <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0 p-0">
+                    <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="img/girl-dress.jpg" alt="Product Image" class="w-100">
+                        </div>
+
+                        <div class="col-lg-8 py-3">
+                            <h2 class="product-name">Skirt Top Set</h2>
+
+                            <div class="start-rating d-flex">
+                                <div class="d-flex">
+                                    <i class="bi bi-star-fill me-1 text-warning"></i>
+                                    <i class="bi bi-star-fill me-1 text-warning"></i>
+                                    <i class="bi bi-star-fill me-1 text-warning"></i>
+                                    <i class="bi bi-star-fill me-1 text-warning"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <p class="m-0 ms-2 text-muted">(4 Reviews)</p>
+                            </div>
+
+                            <div class="product-code mt-2">
+                                <span class="fw-500">Product Code:</span>
+                                <span class="text-muted">LA4031-Blue-S</span>
+                            </div>
+
+                            <div class="product-brief py-3">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quos exercitationem dolore placeat mollitia et! Exercitationem, labore nostrum soluta quisquam error ipsam libero beatae, sunt, vel officiis omnis natus ut!
+                            </div>
+
+                            <div class="product-price-details d-flex align-items-center flex-wrap">
+                                <div class="me-3">
+                                    <h2 class="m-0 fw-bold">Rs. 1499</h2>
+                                    <p class="m-0">
+                                        <span class="text-danger">*</span>
+                                        <span class="text-14 text-muted additional-tax">Additional tax shall apply</span>
+                                    </p>
+                                </div>
+                                <p class="old-pirce m-0 text-muted me-3" style="font-size: 20px;">Rs 2999</p>
+                                <p class="discount m-0 text-danger" style="font-size: 20px;">(40% OFF)</p>
+                            </div>
+
+
+                            <div class="my-3 d-flex flex-wrap">
+                                <div class="size me-sm-5 me-3 my-2">
+                                    <h4 class="fw-bold text-uppercase">Size</h4>
+
+                                    <div class="d-flex mb-1">
+                                        <div class="size-radio">
+                                            <input type="radio" id="s" name="size" value="S" checked />
+                                            <label for="s">S</label>
+                                        </div>
+                                        <div class="size-radio">
+                                            <input type="radio" id="m" name="size" value="M" />
+                                            <label for="m">M</label>
+                                        </div>
+                                        <div class="size-radio">
+                                            <input type="radio" id="l" name="size" value="L" />
+                                            <label for="l">L</label>
+                                        </div>
+                                        <div class="size-radio">
+                                            <input type="radio" id="xl" name="size" value="XL" />
+                                            <label for="xl">XL</label>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="text-dark fw-500">Size Chart</a>
+                                </div>
+                                <div class="color my-2">
+                                    <h4 class="fw-bold text-uppercase">Color</h4>
+
+                                    <select class="form-select text-uppercase text-muted" aria-label="Color" style="min-width: 170px;">
+                                        <option selected value="Yellow">Yellow</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Green">Green</option>
+                                        <option value="Blue">Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-8 col-sm-9">
+                                    <div class="row">
+                                        <div class="col-sm-6 my-2">
+                                            <div class="input-group product-counter">
+                                                <span class="input-group-text" id="minus-count">
+                                                    <i class="bi bi-dash"></i>
+                                                </span>
+                                                <input type="number" class="form-control" value="1" min="1">
+                                                <span class="input-group-text" id="add-count">
+                                                    <i class="bi bi-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 my-2">
+                                            <button class="add-to-cart-btn">Add to Cart</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-3 my-2">
+                                    <button class="wishlist-btn">
+                                        <i class="bi bi-heart"></i>
+                                        <span>Add to Wishlist</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-8 col-sm-9">
+                                    <button class="buy-now-btn">Buy Now</button>
+                                </div>
+                                <div class="col-4 col-sm-3 my-2">
+                                    <button class="wishlist-btn">
+                                        <i class="bi bi-bezier2"></i>
+                                        <span>Add to Compare</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <span class="fw-500">Category:</span>
+                                <span class="text-muted">Sharee</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="fw-500">Tag:</span>
+                                <span class="text-muted">My tag</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="fw-500">Brand:</span>
+                                <span class="text-muted">Zara</span>
+                            </div>
+
+                            <div class="social-share-icons">
+                                <a href="#" class="facebook icon">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter icon">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#" class="linkedin icon">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="instagram icon">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- QUICK VIEW MODAL END -->
 
 
     <!-- CUSTOM JS FILE -->

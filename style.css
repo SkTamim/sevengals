@@ -2,6 +2,11 @@
 	margin: 0;
 	padding: 0;
 }
+select,
+.btn,
+.form-control {
+	box-shadow: none !important;
+}
 
 :root {
 	--color-primary: #a555dc;
@@ -323,6 +328,18 @@ footer {
 	background-color: #fff;
 }
 /* Accordion End */
+.filter-btn {
+	background-color: #a555dc !important;
+	border: none;
+	color: #fff !important;
+	box-shadow: none !important;
+	width: 100%;
+}
+.filter-btn:hover {
+	background-color: #c155dc !important;
+}
+
+/* Custom Checkbox */
 .custom-checkbox {
 	display: inline-block;
 	position: relative;
@@ -458,11 +475,14 @@ footer {
 	margin: 10px 0;
 	position: relative;
 }
+.product-item .card-body {
+	padding: 8px 5px;
+}
 .product-view-btn {
 	display: block;
 	padding: 6px 12px;
 	background-color: #fff;
-	color: #333 !important;
+	color: #333;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -478,8 +498,12 @@ footer {
 	pointer-events: none;
 	transition: 0.3s;
 }
+
+.product-view-btn:hover {
+	background-color: #a555dc;
+	color: #fff;
+}
 .product-view-btn i {
-	color: #c7c101;
 	margin-left: 5px;
 }
 
@@ -489,7 +513,6 @@ footer {
 	pointer-events: all;
 }
 .product-title {
-	font-size: 18px;
 	color: #333;
 	text-decoration: none;
 }
@@ -501,6 +524,7 @@ footer {
 	font-size: 20px;
 	font-weight: 700;
 	letter-spacing: -1px;
+	line-height: 1.1;
 }
 .old-pirce {
 	text-decoration: line-through;
@@ -509,6 +533,118 @@ footer {
 	color: var(--color-primary);
 	font-size: 18px;
 	font-weight: 500;
+}
+.modal-close-btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 10;
+	box-shadow: none !important;
+}
+
+/* CUSTOM RADIO BUTTON FOR SIZE */
+.size-radio {
+	margin: 0 5px;
+}
+.size-radio input[type="radio"] {
+	display: none;
+}
+.size-radio label {
+	padding: 5px;
+	display: inline-block;
+	border: 1px solid grey;
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+.size-radio input[type="radio"]:checked + label {
+	background: #000;
+	color: #fff;
+}
+/* End Custom radio button */
+.product-counter {
+	/* width: 50%; */
+}
+.product-counter .input-group-text {
+	border-radius: 0;
+	background-color: #fff;
+	cursor: pointer;
+}
+.product-counter input {
+	text-align: center;
+}
+.add-to-cart-btn {
+	border: 0;
+	background-color: #000;
+	color: #fff;
+	padding: 8px 10px;
+	width: 100%;
+	text-transform: uppercase;
+}
+.wishlist-btn {
+	border: none;
+	background-color: transparent;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	color: #777;
+	transition: 0.2s;
+}
+.wishlist-btn:hover {
+	color: #000;
+}
+.wishlist-btn span {
+	width: min-content;
+}
+.wishlist-btn i {
+	font-size: 25px;
+	margin-right: 3px;
+}
+
+.buy-now-btn {
+	border: 2px solid #000;
+	background-color: #fff;
+	color: #000;
+	width: 100%;
+	padding: 6px 20px;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+.buy-now-btn:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.social-share-icons {
+	display: flex;
+	margin-top: 10px;
+}
+.social-share-icons .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	color: #fff !important;
+	border-radius: 2px;
+	font-size: 20px;
+}
+.facebook {
+	background-color: #4267b2;
+}
+.twitter {
+	background-color: #1da1f2;
+}
+.linkedin {
+	background-color: #0077b5;
+}
+.instagram {
+	background-color: #c13584;
 }
 
 /* ================================================================
@@ -521,4 +657,8 @@ footer {
 }
 .color-grey {
 	color: var(--color-grey-dark);
+}
+
+.text-14 {
+	font-size: 14px;
 }
