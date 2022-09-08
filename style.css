@@ -311,11 +311,11 @@ footer {
 }
 
 #my-accordion .accordion-button::after {
-	background-image: url(../img/plus-lg.svg);
+	background-image: url(img/plus-lg.svg);
 }
 
 #my-accordion .accordion-button:not(.collapsed)::after {
-	background-image: url(../img/dash-lg.svg);
+	background-image: url(img/dash-lg.svg);
 }
 
 #my-accordion .accordion-button:not(.collapsed) {
