@@ -80,6 +80,7 @@ select,
 
 .s2Box p {
 	font-size: 18px;
+	margin: 0;
 }
 
 .s2logo {
@@ -725,6 +726,67 @@ footer {
 /* ================================================================
 					 STORE PAGE END HERE
 =================================================================== */
+
+/* ===========================================================
+						 CART PAGE START 
+============================================================= */
+.cart-item {
+	display: flex;
+	align-items: center;
+}
+
+.cart-item img {
+	height: 250px;
+}
+.cart-item input {
+	width: 100px;
+	border-radius: 0;
+}
+.remove-icon-btn {
+	background-color: transparent;
+	padding: 5px;
+	border: none;
+	color: var(--color-grey-dark);
+	transition: 0.2s;
+	font-size: 20px;
+}
+.remove-icon-btn:hover {
+	color: var(--color-primary);
+}
+.preceed-btn {
+	width: 100%;
+	border: none;
+	background-color: var(--color-primary);
+	color: #fff !important;
+	display: block;
+	text-align: center;
+	padding: 8px 10px;
+	text-transform: uppercase;
+	margin-top: 10px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.preceed-btn:hover {
+	background-color: #000;
+}
+
+@media screen and (max-width: 476px) {
+	.cart-item img {
+		height: 180px;
+	}
+}
+@media screen and (max-width: 367px) {
+	.cart-item img {
+		height: 140px;
+	}
+	.cart-item input {
+		width: 80px;
+		margin-right: 5px !important;
+	}
+}
+/* ===========================================================
+						 CART PAGE END 
+============================================================= */
 
 /* UTILITIES */
 .fw-500 {
