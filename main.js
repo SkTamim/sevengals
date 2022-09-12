@@ -38,3 +38,23 @@ try {
 } catch (error) {
 	console.log(error);
 }
+
+// ADDRESS RADION BUTTON FUNCTIONALITY
+try {
+	const addressRadio = document.querySelectorAll(".address-radio");
+
+	addressRadio.forEach((item, index, array) => {
+		item.addEventListener("change", () => {
+			array.forEach((el) => {
+				el.parentElement.nextElementSibling.style.border = "none";
+			});
+
+			if (item.checked) {
+				item.parentElement.nextElementSibling.style.border =
+					"2px dashed var(--color-primary)";
+			}
+		});
+	});
+} catch (error) {
+	console.log(error);
+}
