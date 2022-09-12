@@ -15,7 +15,7 @@ select,
 	--color-grey-light: #eee;
 }
 .navbar {
-	box-shadow: 0 5px 10px #f4f4f4;
+	/* box-shadow: 0 5px 10px #f4f4f4; */
 }
 .navbar-brand img {
 	width: 80px;
