@@ -14,7 +14,9 @@ select,
 	--color-grey-dark: #6c757d;
 	--color-grey-light: #eee;
 }
-
+.navbar {
+	box-shadow: 0 5px 10px #f4f4f4;
+}
 .navbar-brand img {
 	width: 80px;
 }
@@ -729,7 +731,7 @@ footer {
 =================================================================== */
 
 /* ===========================================================
-						 CART PAGE START 
+						 CART AND CHECKOUT PAGE START 
 ============================================================= */
 .cart-item {
 	display: flex;
@@ -958,8 +960,28 @@ footer {
 }
 
 /* ===========================================================
-						 CART PAGE END 
+						 CART AND CHECKOUT PAGE END 
 ============================================================= */
+
+/* ========= OTHER PAGES STYLES ========== */
+.login-info {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+.login-info a {
+	text-decoration: none;
+	color: var(--color-grey-dark);
+}
+.login-info a:hover {
+	text-decoration: none;
+	color: var(--color-primary);
+}
+@media screen and (min-width: 768px) {
+	.box-height {
+		min-height: 400px;
+	}
+}
 
 /* UTILITIES */
 .fw-500 {
@@ -968,7 +990,27 @@ footer {
 .color-grey {
 	color: var(--color-grey-dark);
 }
+.color-primary {
+	color: var(--color-primary);
+}
 
 .text-14 {
 	font-size: 14px;
+}
+.btn-outline {
+	border: 2px solid #eee;
+	text-transform: uppercase;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: #333;
+	font-weight: 500;
+	display: block;
+	width: max-content;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.btn-outline:hover {
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
 }
