@@ -982,6 +982,27 @@ footer {
 		min-height: 400px;
 	}
 }
+.wishlist-info a {
+	color: var(--color-grey-dark);
+	display: block;
+	pad: 10px;
+	margin: 0 10px;
+	font-size: 20px;
+}
+.wishlist-info a:hover {
+	color: var(--color-primary);
+}
+.details-link {
+	color: var(--color-grey-dark);
+	font-weight: bold;
+	text-decoration: none;
+}
+.details-link i {
+	font-size: 14px;
+}
+.order-history-table td {
+	min-width: 100px;
+}
 
 /* UTILITIES */
 .fw-500 {
@@ -1013,4 +1034,12 @@ footer {
 	background-color: #000;
 	border-color: #000;
 	color: #fff;
+}
+.link {
+	text-decoration: none;
+	color: var(--color-grey-dark);
+	transition: 0.2s;
+}
+.link:hover {
+	color: var(--color-primary);
 }

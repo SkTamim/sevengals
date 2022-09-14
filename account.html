@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEVEN GALS</title>
+
+    <!-- BOOSTTRAP CSS FILE CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- BOOSTTRAP ICON CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- CUSTOM CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- MAIN NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid px-md-5">
+            <a href="#" class="navbar-brand d-flex align-items-center gap-2">
+                <img src="img/Seven Gals Icon (Black).png" alt="Logo">
+                <span class="Navlogo">
+                    SEVEN GALS
+                </span>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavbarIcon">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="NavbarIcon">
+                <ul class="navbar-nav ms-auto align-items-md-center">
+                    <li class="nav-item"> <a href="#" class="nav-link fw-500">About Us</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle fw-500" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="store.html">Shop Now</a></li>
+                                <li><a class="dropdown-item" href="#">Another</a></li>
+                                <li><a class="dropdown-item" href="#">Something</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person nav-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">
+                            <i class="bi bi-cart3 nav-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BRADCUMB SECTION -->
+    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+        <ol class="breadcrumb px-3 py-2">
+            <li class="breadcrumb-item">
+                <a href="index.html" style="color: var(--color-grey-dark);">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page"> Account</li>
+        </ol>
+    </nav>
+
+
+    <main class="container-xxl mt-3 mb-4 px-md-4">
+        <h1 class="text-center display-3 fw-bold">Account</h1>
+
+        <div class="row my-5">
+            <div class="col-12">
+
+                <div class=" border-bottom py-3">
+                    <h5 class="fw-bold">My Account</h5>
+                </div>
+
+
+                <div class="my-2 py-4 border-bottom">
+                    <h5 class="fw-bold">Account Details</h5>
+                    <table class="table border m-0">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Name:</th>
+                                <td class="text-muted border-start">Sk Tamim</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">E-mail:</th>
+                                <td class="text-muted border-start">sktamimdev@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Phone No.:</th>
+                                <td class="text-muted border-start">1234567890</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="address.html" class="preceed-btn m-0 mt-4" style="width: max-content;">
+                        View Addresses (2)
+                    </a>
+
+
+                </div>
+
+
+                <div class="py-3">
+                    <h5 class="fw-bold">Order History</h5>
+
+                    <div class="table-responsive">
+                        <table class="table border m-0 order-history-table">
+                            <thead>
+                                <tr>
+                                    <th class="border-start text-center"> Action</th>
+                                    <th class="border-start text-center"> Order</th>
+                                    <th class="border-start text-center"> Date</th>
+                                    <th class="border-start text-center"> Payment Status</th>
+                                    <th class="border-start text-center"> Transaction Mode</th>
+                                    <th class="border-start text-center"> Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border-start text-center">
+                                        <a href="order-history.html" class="details-link">
+                                            <i class="bi bi-pencil-fill"></i>
+                                            Details
+                                        </a>
+                                    </td>
+                                    <td class="border-start text-center">
+                                        <a href="order-history.html" class="color-grey">
+                                            #22323
+                                        </a>
+                                    </td>
+                                    <td class="text-muted border-start text-center">12 Sep 2022 11:56</td>
+                                    <td class="text-muted border-start text-center">Pending</td>
+                                    <td class="text-muted border-start text-center">Credit/Debit Card/Net Banking</td>
+                                    <td class="text-muted border-start text-center">Rs. 3636.64</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="border-start text-center">
+                                        <a href="order-history.html" class="details-link">
+                                            <i class="bi bi-pencil-fill"></i>
+                                            Details
+                                        </a>
+                                    </td>
+                                    <td class="border-start text-center">
+                                        <a href="order-history.html" class="color-grey">
+                                            #22323
+                                        </a>
+                                    </td>
+                                    <td class="text-muted border-start text-center">14 Sep 2022 11:56</td>
+                                    <td class="text-muted border-start text-center">Pending</td>
+                                    <td class="text-muted border-start text-center">Cash On Delivery</td>
+                                    <td class="text-muted border-start text-center">Rs. 3636.64</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- BENEFIT SECTION -->
+    <div class="section2 container my-4">
+        <div class="row s2Row">
+            <div class="col-lg-4 col-md-6 col-sm-12 b">
+                <div class="s2Box py-3 px-2">
+                    <img class="s2logo" src="img/airplane.svg" alt="">
+                    <p class="ms-5">Free Shipping Worldwide</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 b">
+                <div class="s2Box py-3 px-2">
+                    <img class="s2logo" src="img/headphones.svg" alt="">
+                    <p class="ms-5">24x7 Customer Service</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 b">
+                <div class="s2Box py-3 px-2">
+                    <img class="s2logo" src="img/heart.svg" alt="">
+                    <p class="ms-5">Easy Return Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEWSLATTER SECTION START -->
+    <section class="newslatter-section">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h1>Sign up for free style tips</h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-lg" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEWSLATTER SECTION END -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-5 mb-4">
+                    <div class="footer-logo d-flex align-items-center gap-2">
+                        <img src="img/Seven Gals Icon (Black).png" alt="Logo">
+                        <h1 class="text-uppercase">Seven Gals</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex cum impedit sit itaque dolores suscipit dolore quibusdam commodi? Illum deleniti quisquam dicta? Vero dicta maxime quam .</p>
+
+                    <ul class="social-icons">
+                        <li>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7 m-auto">
+
+                    <div class="d-flex justify-content-around flex-wrap">
+                        <div class="footer-links">
+                            <h5>Opening Time</h5>
+                            <ul>
+                                <li><a href="#">Mon 8am</a></li>
+                                <li><a href="#">Sat 6am</a></li>
+                                <li><a href="#">Wed 10am</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h5>Information</h5>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">New collection</a></li>
+                                <li><a href="#">Term & Condition</a></li>
+                                <li><a href="#">Privecy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h5>Shop guide</h5>
+                            <ul>
+                                <li><a href="#">Card Tracing</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Size guide</a></li>
+                                <li><a href="#">Term & Condition</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright &copy; sevengals.com</p>
+        </div>
+    </footer>
+
+
+
+    <!-- CUSTOM JS FILE -->
+    <script src="main.js"></script>
+
+    <!-- BOOSTTRAP JS FILE CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
