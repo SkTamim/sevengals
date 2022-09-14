@@ -24,7 +24,7 @@
     <!-- MAIN NAVIGATION BAR -->
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid px-md-5">
-            <a href="#" class="navbar-brand d-flex align-items-center gap-2">
+            <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
                 <img src="img/Seven Gals Icon (Black).png" alt="Logo">
                 <span class="Navlogo">
                     SEVEN GALS
@@ -35,7 +35,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="NavbarIcon">
-                <ul class="navbar-nav ms-auto align-items-md-center">
+                <ul class="navbar-nav ms-auto align-items-md-center me-5">
                     <li class="nav-item"> <a href="#" class="nav-link fw-500">About Us</a></li>
                     <li class="nav-item">
                         <div class="dropdown">
@@ -44,25 +44,34 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item" href="store.html">Shop Now</a></li>
-                                <li><a class="dropdown-item" href="#">Another</a></li>
-                                <li><a class="dropdown-item" href="#">Something</a></li>
+                                <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                                <li><a class="dropdown-item" href="order-history.html">Order History</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="bi bi-person nav-icon"></i>
-                        </a>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link" id="accountIcon" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person nav-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="accountIcon">
+                                <li><a class="dropdown-item" href="account.html">Account</a></li>
+                                <li><a class="dropdown-item" href="address.html">Addresses</a></li>
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="create-account.html">Create Account</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="nav-item"> <a href="#" class="nav-link">
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link position-relative">
                             <i class="bi bi-cart3 nav-icon"></i>
+                            <span class="position-absolute badge rounded-pill cart-items-count">4</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- BRADCUMB SECTION -->
     <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
         <ol class="breadcrumb px-3 py-2">
